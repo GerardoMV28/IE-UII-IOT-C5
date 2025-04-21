@@ -39,23 +39,47 @@
 
 # Elementos
 
-## Tabla de materiales 
+# 🚒 FIRE-ALARM: Sistema de Alarma de Incendios
 
-| Nombre | Función | Precio |
-|------------------------------------|--------|--------|
-| **Buzzer Pasivo** | Sirve para poder generar un sonido tras recibir una señal, de estos se adquirieron 2 | $60.00 |
-| **Tira led** | Sirve para marcar el color del estado en el que se encuentra el sistema | $20.00 |
-| **Led** | Sirve para marcar el color del estado en el que se encuentra el sistema | $10.00 |
-| **Carcasa** | Estructura física del sistema | $180.00 |
-| **Carcasa** | Sirve para marcar el color del estado en el que se encuentra el sistema | $180.00 |
+## 📖 Descripción General
+FIRE-ALARM es un sistema de alarma de incendios basado en un microcontrolador ESP32 y Node-RED para la detección temprana de humo y temperatura elevada. Envía señales sonoras y visuales, registra datos en una base de datos local (SQLite) y permite monitoreo remoto desde una interfaz web.
 
-## Tabla de sensores
+## 🎯 Objetivos del Proyecto
+- Detectar humo y temperatura anómala para alertar de posibles incendios.
+- Generar alarma sonora y visual (buzzer y LEDs).
+- Registrar eventos y valores de sensor en una base de datos.
+- Proporcionar una interfaz web con Node-RED para monitoreo y notificaciones.
 
-| Nombre | Función | Precio |
-|------------------------------------|--------|--------|
-| **Módulo Termómetro Infrarrojo Mlx90614, Electrónica, Arduino** | Detecta por infrarojo la temperatura ambiente y de un objeto | $350.00 |
-| **MQ-2** | Detecta la sensidad del aire y sirve para verificar si hay humo | $50.00|
-| **Modulo Pir Hc-sr501 Sensor Presencia Movimiento Infrarrojo** | Detecta el movimiento | $50.00 |
+## ⚙️ Tecnologías Utilizadas
+
+| Tecnología      | Uso Principal                                     |
+|-----------------|---------------------------------------------------|
+| **ESP32**       | Lectura de sensores y control de actuadores       |
+| **Node‑RED**    | Orquestación de flujos y panel de control web     |
+| **SQLite**      | Almacenamiento local de registros de eventos      |
+| **MQTT**        | Comunicación entre ESP32 y Node‑RED               |
+| **3D Printing** | Carcasa y soportes para sensores y actuadores     |
+
+## 🛠️ Materiales
+
+| Nombre                                           | Función                                                                     | Precio   |
+|--------------------------------------------------|-----------------------------------------------------------------------------|----------|
+| **Buzzer Pasivo (×2)**                           | Sirve para generar el sonido de alarma                                      | \$60.00  |
+| **Tira LED**                                     | Indicar con color el estado del sistema                                     | \$20.00  |
+| **LED (×3)**                                     | Señalización visual de estado                                               | \$10.00  |
+| **Carcasa impresa en 3D**                        | Estructura física del sistema                                               | \$180.00 |
+
+## 🌡️ Sensores
+
+| Nombre                                                         | Función                                                                    | Precio   |
+|----------------------------------------------------------------|----------------------------------------------------------------------------|----------|
+| **Termómetro Infrarrojo MLX90614**                             | Mide temperatura ambiental y de objetos sin contacto                       | \$350.00 |
+| **Detector de Humo MQ-2**                                      | Detecta concentración de gas y humo                                        | \$50.00  |
+| **Sensor PIR HC-SR501**                                        | Detecta presencia / movimiento                                             | \$50.00  |
+
+
+
+
 
 
 
